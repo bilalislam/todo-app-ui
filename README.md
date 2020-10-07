@@ -70,8 +70,8 @@ You will also see all accepted tests
 ### Deployment
 
 also these will add followings are;
-* docker swarm
-* awesome readme
+* docker compose !
+* awesome readme ! 
 
 ### Architecure
 
