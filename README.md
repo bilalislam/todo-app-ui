@@ -70,7 +70,7 @@ also these will add followings are;
 ### Architecure
 
 This project has been created with create-react-app template by facebook !
-Open [create-react-app](https://tr.reactjs.org/) to view it in the browser.
+Open [create-react-app](https://github.com/facebook/create-react-app) to view it in the browser.
 
 
 
