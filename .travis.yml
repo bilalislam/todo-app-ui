@@ -7,6 +7,9 @@ node_js:
 
 services:
   - docker
+
+install:
+  - yarn  
   
 before_deploy:
   - env CI=true npm run test:ci
