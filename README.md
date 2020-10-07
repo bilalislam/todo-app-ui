@@ -64,6 +64,7 @@ You will also see all accepted tests
 
 also these will add followings are;
 * dockerfile
+* add ci
 * k8s configs
-* arc. decision note
+* arc. decision not
 
