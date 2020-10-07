@@ -7,11 +7,9 @@ node_js:
 
 services:
   - docker
-
-script:  
-  - yarn test:ci
   
 before_deploy:
+  - env CI=true yarn test:ci
   - yarn build
 
 after_success:
