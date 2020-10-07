@@ -70,9 +70,7 @@ You will also see all accepted tests
 ### Deployment
 
 also these will add followings are;
-* dockerfile
-* add ci
-* k8s configs
+* docker swarm
 * awesome readme
 
 ### Architecure
