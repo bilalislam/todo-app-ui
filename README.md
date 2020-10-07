@@ -62,15 +62,17 @@ You will also see all accepted tests
 
 ### Deployment
 
+amplify.yml file execute deployment process on aws
+
+
 also these will add followings are;
 * dockerfile
 * add ci
 * k8s configs
+* awesome readme
 
 ### Architecure
 
 This project has been created with create-react-app template by facebook !
 Open [create-react-app](https://github.com/facebook/create-react-app) to view it in the browser.
-
-
 
