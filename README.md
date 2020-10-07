@@ -69,9 +69,6 @@ You will also see all accepted tests
 
 ### Deployment
 
-amplify.yml file execute deployment process on aws
-
-
 also these will add followings are;
 * dockerfile
 * add ci
