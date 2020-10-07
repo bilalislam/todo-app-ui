@@ -4,13 +4,16 @@ language: node_js
 
 node_js:
   - 12
+
 services:
   - docker
 
-script:
-  - npm run build
+script:  
   - yarn test:ci
   
+before_deploy:
+  - yarn run build
+
 after_success:
   - docker --version  # document the version travis is using
   - pip install --user awscli # install aws cli w/o sudo
@@ -18,4 +21,4 @@ after_success:
   - aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 410355896954.dkr.ecr.eu-west-1.amazonaws.com
   - docker build -t todo-app-ui .
   - docker tag todo-app-ui:latest 410355896954.dkr.ecr.eu-west-1.amazonaws.com/todo-app-ui:latest
-  - docker push 410355896954.dkr.ecr.eu-west-1.amazonaws.com/todo-app-ui:latest 
+  - docker push 410355896954.dkr.ecr.eu-west-1.amazonaws.com/todo-app-ui:latest
