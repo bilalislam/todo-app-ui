@@ -10,7 +10,7 @@ services:
   
 before_deploy:
   - env CI=true yarn test:ci
-  - yarn build
+  - npm run build
 
 after_success:
   - docker --version  # document the version travis is using
