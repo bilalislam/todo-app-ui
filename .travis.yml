@@ -9,7 +9,7 @@ services:
   - docker
   
 before_deploy:
-  - env CI=true yarn test:ci
+  - env CI=true npm run test:ci
   - npm run build
 
 after_success:
