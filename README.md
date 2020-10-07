@@ -56,6 +56,13 @@ and will open port as 5000
 $ yarn cypress
 ```
 
+###  For local acceptance test
+
+```js
+$ npm start
+$ npx cypress run
+```
+
 The a-tdd (acceptance test) page will reload if you run this command.<br />
 You will also see all accepted tests
 
