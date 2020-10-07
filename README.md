@@ -56,7 +56,7 @@ and will open port as 5000
 $ yarn cypress
 ```
 
-###  For local acceptance test
+### For Local Acceptance Test
 
 ```js
 $ npm start
