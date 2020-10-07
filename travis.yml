@@ -12,7 +12,7 @@ script:
   - yarn test:ci
   
 before_deploy:
-  - yarn run build
+  - yarn build
 
 after_success:
   - docker --version  # document the version travis is using
