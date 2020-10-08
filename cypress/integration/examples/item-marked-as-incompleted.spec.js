@@ -13,7 +13,7 @@ describe('item mark as incomplete', () => {
                 const target = Cypress._.head(todos)
                 cy.route(
                     'PUT',
-                    `/api/todos/${target.id}`,
+                    `/tasks/${target.id}`,
                     Cypress._.merge(target, { isComplete: false })
                 )
             })

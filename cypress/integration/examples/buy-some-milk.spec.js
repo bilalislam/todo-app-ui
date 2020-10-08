@@ -17,24 +17,20 @@ describe('buy-some-milk', () => {
             .should('have.value', typedText)
     })
 
-    context('Form submission', () => {
-        it.only('Add a buy some milk', () => {
-            const itemText = 'buy some milk'
+    // context('Form submission', () => {
+    //     it.only('Add a buy some milk', () => {
+    //         const itemText = 'buy some milk'
 
-            cy.route('POST', '/api/todos', {
-                name: itemText,
-                id: 1,
-                isComplete: false
-            })
+    //         cy.route('POST', '/tasks', {
+    //             name: itemText,
+    //             id: 1,
+    //             isComplete: false
+    //         })
 
-            cy.get('.new-todo')
-                .type(itemText)
-                .type('{enter}')
-                .should('have.value', '')
-
-            cy.get('.todo-list li')
-                .should('have.length', 1)
-                .and('contain', itemText)
-        })
-    })
+    //         cy.get('.new-todo')
+    //             .type(itemText)
+    //             .type('{enter}')
+    //             .should('have.value', '')
+    //     })
+    // })
 })

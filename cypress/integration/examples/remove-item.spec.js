@@ -10,7 +10,7 @@ describe('remove item', () => {
 
     it.only('removes a todo item', () => {
         cy.route({
-            url: 'api/todos/3',
+            url: 'tasks/3',
             method: 'DELETE',
             status: 200,
             response: {}

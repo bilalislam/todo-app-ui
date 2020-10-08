@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import TodoForm from './TodoForm'
 import TodoList from './TodoList'
 import Footer from './Footer'
-import { pipe, partial, findById, toggleItem, removeItem, updateItem, addItem } from '../lib/helper'
+import { pipe, partial, findById, toggleItem, removeItem, updateItem, addItem, generateId } from '../lib/helper'
 import { loadTodos, saveTodo, updateTodo, destroyTodo } from '../lib/service'
 
 
@@ -32,11 +32,12 @@ export default class TodoApp extends Component {
     this.setState({ currentTodo: evt.target.value })
   }
 
+
   handleTodoSubmit(evt) {
     evt.preventDefault()
-    const newTodo = { name: this.state.currentTodo, isComplete: false }
+    const newTodo = { name: this.state.currentTodo, isComplete: false, id: generateId() }
     const updatedTodos = addItem(this.state.todos, newTodo)
-    saveTodo(updatedTodos)
+    saveTodo(newTodo)
       .then(() => this.setState({
         todos: updatedTodos,
         currentTodo: ''
