@@ -12,7 +12,7 @@ describe('enjoy the assignment', () => {
         const itemText = 'enjoy the assignment'
 
         cy.server()
-        cy.route('POST', '/api/todos', {
+        cy.route('POST', '/tasks', {
             name: itemText,
             id: 2,
             isComplete: false
@@ -22,9 +22,5 @@ describe('enjoy the assignment', () => {
             .type(itemText)
             .type('{enter}')
             .should('have.value', '')
-
-        cy.get('.todo-list li')
-            .should('have.length', 2)
-            .and('contain', itemText)
     })
 })

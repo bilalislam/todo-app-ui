@@ -2,7 +2,14 @@ export const partial = (fn, ...args) => fn.bind(null, ...args)
 const _pipe = (f, g) => (...args) => g(f(...args))
 export const pipe = (...fns) => fns.reduce(_pipe)
 
-export const addItem = (list, item) => [...list, item]
+export const generateId = () => Math.floor(Math.random() * 100000)
+export const addItem = (list, item) => {
+  if (!list)
+    list = []
+
+  return [...list, item]
+}
+
 export const findById = (id, list) => list.find(item => item.id === id)
 export const toggleItem = (todo) => ({ ...todo, isComplete: !todo.isComplete })
 export const updateItem = (list, updated) => {

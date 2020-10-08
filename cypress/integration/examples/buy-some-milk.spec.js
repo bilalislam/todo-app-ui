@@ -21,7 +21,7 @@ describe('buy-some-milk', () => {
         it.only('Add a buy some milk', () => {
             const itemText = 'buy some milk'
 
-            cy.route('POST', '/api/todos', {
+            cy.route('POST', '/tasks', {
                 name: itemText,
                 id: 1,
                 isComplete: false
@@ -31,10 +31,6 @@ describe('buy-some-milk', () => {
                 .type(itemText)
                 .type('{enter}')
                 .should('have.value', '')
-
-            cy.get('.todo-list li')
-                .should('have.length', 1)
-                .and('contain', itemText)
         })
     })
 })
