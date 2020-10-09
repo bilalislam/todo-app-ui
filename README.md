@@ -67,11 +67,15 @@ The a-tdd (acceptance test) page will reload if you run this command.<br />
 You will also see all accepted tests
 
 
-### Deployment
+### Run on Local Environment
 
-also these will add followings are;
-* docker compose !
-* awesome readme ! 
+ ```sh
+ $ docker-compose up
+ $ open http://localhost:5000
+ ```
+
+ ### Deployment to k8s
+
 
 ### Architecure
 
