@@ -1,9 +1,12 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:8080';
+const baseUrl = "http://192.168.99.112:31500"
 
-export const loadTodos = () =>
-    axios.get(baseUrl + '/tasks')
+export const loadTodos = () => {
+    console.log(baseUrl)
+    return axios.get(baseUrl + '/tasks')
+}
+
 
 export const saveTodo = (todo) => {
     return fetch(`${baseUrl}/tasks`, {
