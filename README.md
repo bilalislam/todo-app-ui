@@ -67,13 +67,6 @@ The a-tdd (acceptance test) page will reload if you run this command.<br />
 You will also see all accepted tests
 
 
-### Run on Local Environment
-
- ```sh
- $ docker-compose up
- $ open http://localhost:5000
- ```
-
  ### Deployment to k8s
 
 
