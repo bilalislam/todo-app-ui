@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "http://192.168.99.112:31500"
+const baseUrl = "http://a919649894bb04154ba6bbec73ac46f8-420501796.eu-west-1.elb.amazonaws.com:8080"
 
 export const loadTodos = () => {
     console.log(baseUrl)
