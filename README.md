@@ -16,7 +16,7 @@ As seen in the demo, Actually the operation of the cypress js tool is taken. Bel
 ![Random GIF](./images/todos.gif)
 
 Runs the app in the production mode.<br />
-Open [http://a2d25b122e7e748b1a9e783974678ff0-651447118.eu-west-1.elb.amazonaws.com:5000/](http://http://a2d25b122e7e748b1a9e783974678ff0-651447118.eu-west-1.elb.amazonaws.com:5000/) to view it in the browser.
+Open [http://a2d25b122e7e748b1a9e783974678ff0-651447118.eu-west-1.elb.amazonaws.com:5000/](http://a2d25b122e7e748b1a9e783974678ff0-651447118.eu-west-1.elb.amazonaws.com:5000/) to view it in the browser.
 
 # Table of contents
 
